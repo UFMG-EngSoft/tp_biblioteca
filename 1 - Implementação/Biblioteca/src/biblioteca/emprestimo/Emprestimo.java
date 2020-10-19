@@ -11,11 +11,11 @@ public class Emprestimo {
   private Date dataPrevistaDevolucao;
   private float valorMulta;
 
-  Emprestimo() {
+  public Emprestimo() {
 
   }
 
-  Emprestimo(int idExemplar, int idUsuario, boolean ativo, Date dataEmprestimo, Date dataDevolucao,
+  public Emprestimo(int idExemplar, int idUsuario, boolean ativo, Date dataEmprestimo, Date dataDevolucao,
       Date dataPrevistaDevolucao, float valorMulta) {
     this.idExemplar = idExemplar;
     this.idUsuario = idUsuario;

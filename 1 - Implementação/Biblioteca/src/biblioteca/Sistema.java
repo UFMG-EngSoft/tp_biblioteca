@@ -6,15 +6,17 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+import biblioteca.exemplar.Livro;
+import biblioteca.exemplar.Titulo;
 import biblioteca.usuario.Aluno;
 import biblioteca.usuario.Professor;
 import biblioteca.usuario.Usuario;
 
 public class Sistema {
   boolean executando;
-  boolean usuarioEstaLogado;
 
   Usuario usuario;
+  List<Titulo> titulos;
 
   private boolean autenticarUsuario(String login, String senha) {
     boolean usuarioValido = true;
@@ -30,8 +32,7 @@ public class Sistema {
 
   private void encerrarSessao() {
     System.out.println("\nFoi um prazer rever você " + usuario.getNome() + ", até mais!");
-    this.usuario = null;
-    this.usuarioEstaLogado = false;
+    usuario = new Usuario();
   }
 
   private void encerrarExecucao() {
@@ -49,7 +50,6 @@ public class Sistema {
     System.out.print("Senha: ");
     senha = leitor.next();
     if (autenticarUsuario(login, senha)) {
-      this.usuarioEstaLogado = true;
       System.out.println("\nOlá Sr(a) " + this.usuario.getNome() + ", que milagre você por aqui!");
     } else {
       System.out.println("Login e/ou senha incorretos, por favor tente novamente.");
@@ -106,9 +106,15 @@ public class Sistema {
     }
   }
 
+  private boolean carregarTitulos() {
+    this.titulos = new ArrayList<>();
+    return true;
+  }
+
   private void iniciarLoopExecucao() {
+    carregarTitulos();
     while (executando) {
-      if (usuarioEstaLogado == false) {
+      if (!usuario.estaLogado) {
         mostrarTelaLogin();
       } else {
         mostrarTelaPrincipal();
@@ -118,7 +124,7 @@ public class Sistema {
 
   public Sistema() {
     executando = true;
-    usuarioEstaLogado = false;
+    usuario = new Usuario();
     iniciarLoopExecucao();
   }
 }

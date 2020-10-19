@@ -1,5 +1,8 @@
 package biblioteca.exemplar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Titulo {
   protected int id;
   protected int numeroExemplares;
@@ -7,6 +10,7 @@ public class Titulo {
   protected String descricao;
   protected boolean disponivel;
   protected String nome;
+  protected List<Exemplar> exemplares;
 
   public void mudarDisponibilidade() {
 
@@ -24,5 +28,17 @@ public class Titulo {
     this.descricao = descricao;
     this.disponivel = disponivel;
     this.nome = nome;
+    this.exemplares = new ArrayList<>();
+  }
+
+  public Titulo(int id, int numeroExemplares, int periodoMaximoEmprestimo, String descricao, boolean disponivel,
+      String nome, List<Exemplar> exemplares) {
+    this.id = id;
+    this.numeroExemplares = numeroExemplares;
+    this.periodoMaximoEmprestimo = periodoMaximoEmprestimo;
+    this.descricao = descricao;
+    this.disponivel = disponivel;
+    this.nome = nome;
+    this.exemplares = exemplares;
   }
 }
