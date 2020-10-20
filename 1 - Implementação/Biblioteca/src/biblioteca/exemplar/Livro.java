@@ -14,4 +14,33 @@ public class Livro extends Titulo {
     this.autor = autor;
     this.ISBN = ISBN;
   }
+
+  /**
+   * @return String return the autor
+   */
+  public String getAutor() {
+      return autor;
+  }
+
+  /**
+   * @param autor the autor to set
+   */
+  public void setAutor(String autor) {
+      this.autor = autor;
+  }
+
+  /**
+   * @return String return the ISBN
+   */
+  public String getISBN() {
+      return ISBN;
+  }
+
+  /**
+   * @param ISBN the ISBN to set
+   */
+  public void setISBN(String ISBN) {
+      this.ISBN = ISBN;
+  }
+
 }

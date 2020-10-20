@@ -14,4 +14,33 @@ public class Periodico extends Titulo {
     this.editora = editora;
     this.ISSN = ISSN;
   }
+
+  /**
+   * @return String return the editora
+   */
+  public String getEditora() {
+      return editora;
+  }
+
+  /**
+   * @param editora the editora to set
+   */
+  public void setEditora(String editora) {
+      this.editora = editora;
+  }
+
+  /**
+   * @return String return the ISSN
+   */
+  public String getISSN() {
+      return ISSN;
+  }
+
+  /**
+   * @param ISSN the ISSN to set
+   */
+  public void setISSN(String ISSN) {
+      this.ISSN = ISSN;
+  }
+
 }

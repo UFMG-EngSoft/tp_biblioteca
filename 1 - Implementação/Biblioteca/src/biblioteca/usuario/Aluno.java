@@ -14,4 +14,18 @@ public class Aluno extends Usuario {
     this.matricula = matricula;
   }
 
+  /**
+   * @return String return the matricula
+   */
+  public String getMatricula() {
+      return matricula;
+  }
+
+  /**
+   * @param matricula the matricula to set
+   */
+  public void setMatricula(String matricula) {
+      this.matricula = matricula;
+  }
+
 }

@@ -12,4 +12,19 @@ public class Jornal extends Titulo {
     super(id, numeroExemplares, periodoMaximoEmprestimo, descricao, disponivel, nome);
     this.editorChefe = editorChefe;
   }
+
+  /**
+   * @return String return the editorChefe
+   */
+  public String getEditorChefe() {
+      return editorChefe;
+  }
+
+  /**
+   * @param editorChefe the editorChefe to set
+   */
+  public void setEditorChefe(String editorChefe) {
+      this.editorChefe = editorChefe;
+  }
+
 }
