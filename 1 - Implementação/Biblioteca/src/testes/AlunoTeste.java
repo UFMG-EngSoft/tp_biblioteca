@@ -19,7 +19,7 @@ public class AlunoTeste {
         String senha = "123456";
         String matricula = "2018856723";
         Aluno aluno = new Aluno(id, nome, sexo, dataNascimento, login, senha, matricula);
-        
+
         assertEquals(id, aluno.getId());
         assertEquals(nome, aluno.getNome());
         assertEquals(sexo, aluno.getSexo());

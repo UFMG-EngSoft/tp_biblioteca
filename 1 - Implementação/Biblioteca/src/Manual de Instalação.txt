@@ -1,13 +1,16 @@
 Esse projeto foi desenvolvido utilizando a IDE Visual Studio Code (VSCode), no sistema operacional
 Windows 10 x64. 
 
+Um tutorial de configuração pode ser encontrado em:
+https://www.youtube.com/watch?v=LRkqvZs857c&feature=youtu.be&ab_channel=software_technology
+
 Para instalar e executar o projeto, siga as instruções abaixo:
 1. Baixe e instale o VSCode (https://code.visualstudio.com/download);
 2. Baixe o JDK 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html);
-3 Baixe o jar do JUnit (https://junit.org/junit5/);
+3. Baixe o jar do JUnit (https://search.maven.org/search?q=g:org.junit.platform%20AND%20v:1.6.0);
 4. Abra o arquivo settings.json do VSCode, digitando ctrl+shift+p pesquisando por "settings";
 5. Inclua o seguinte trecho de código no arquivo settings.json do VSCode (O caminho dos arquivos pode
-   variar conforme salvo em sua máquina local):
+   variar conforme salvo em sua máquina local ou de acordo com JDK/versão do Junit instalada):
 
     "java.home": "C:\\Program Files\\Java\\jdk-15",
     "java.project.referencedLibraries": [

@@ -75,7 +75,7 @@ public class Sistema {
     switch (opcao) {
       case "0":
         if (this.usuario instanceof Professor) {
-          System.out.println("00000");
+          ((Professor) this.usuario).configurarDisponibilidadeTitulo();
         } else {
           System.out.println("Opção inválida");
         }
@@ -87,13 +87,13 @@ public class Sistema {
         this.usuario.realizarDevolucao();
         break;
       case "3":
-        System.out.println("333333");
+        this.usuario.pagarMultaPorAtraso();
         break;
       case "4":
-        System.out.println("444444");
+        this.usuario.indicarPerda();
         break;
       case "5":
-        System.out.println("555555");
+        this.usuario.assinarPeriodico();
         break;
       case "6":
         this.encerrarSessao();
@@ -112,6 +112,7 @@ public class Sistema {
   }
 
   private void iniciarLoopExecucao() {
+    System.out.println("\nSISTEMA PARA GESTÃO DE BIBLIOTECA");
     carregarTitulos();
     while (executando) {
       if (!usuario.estaLogado) {

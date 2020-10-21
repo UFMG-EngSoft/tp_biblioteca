@@ -32,8 +32,22 @@ public class Usuario {
   }
 
   public boolean realizarDevolucao() {
-
     System.out.println("Devolução realizada com sucesso!");
+    return true;
+  }
+
+  public boolean pagarMultaPorAtraso() {
+    System.out.println("Multa paga com sucesso!");
+    return true;
+  }
+
+  public boolean indicarPerda() {
+    System.out.println("Perda indicada com sucesso!");
+    return true;
+  }
+
+  public boolean assinarPeriodico() {
+    System.out.println("Periodico assinado com sucesso!");
     return true;
   }
 
