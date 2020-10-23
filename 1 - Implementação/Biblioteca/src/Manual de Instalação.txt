@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=LRkqvZs857c&feature=youtu.be&ab_channel=software
 Para instalar e executar o projeto, siga as instruções abaixo:
 1. Baixe e instale o VSCode (https://code.visualstudio.com/download);
 2. Baixe o JDK 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html);
-3. Baixe o jar do JUnit (https://search.maven.org/search?q=g:org.junit.platform%20AND%20v:1.6.0);
+3. Baixe o jar do JUnit (https://www.youtube.com/redirect?event=video_description&v=LRkqvZs857c&q=https%3A%2F%2Fsearch.maven.org%2Fremotecontent%3Ffilepath%3Dorg%2Fjunit%2Fplatform%2Fjunit-platform-console-standalone%2F1.6.0%2Fjunit-platform-console-standalone-1.6.0.jar&redir_token=QUFFLUhqbUM0d3N5R1lsOWJDU0NHUUtHSkhsQjcyc1Vjd3xBQ3Jtc0trSFBWUmk0R3JvM3IyTkpqeGNXRTg5d200LTBkblJLZkZjVWEzbnczb2tLbWxIM0g1Nm9lZVFkNk16MVpYNVdsU2pLMGVNWDFWRzhPSnhTTUhmeE5kTzgyMEktN1FsR1V6S2x2c0lXa3M1Y3pkM1ltUQ%3D%3D);
 4. Abra o arquivo settings.json do VSCode, digitando ctrl+shift+p pesquisando por "settings";
 5. Inclua o seguinte trecho de código no arquivo settings.json do VSCode (O caminho dos arquivos pode
    variar conforme salvo em sua máquina local ou de acordo com JDK/versão do Junit instalada):
@@ -15,7 +15,7 @@ Para instalar e executar o projeto, siga as instruções abaixo:
     "java.home": "C:\\Program Files\\Java\\jdk-15",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "..\\junit-platform-console-standalone-1.6.0.jar"
+        ".\\junit-platform-console-standalone-1.6.0.jar"
     ]
 
 6. Execute o arquivo Main.java.

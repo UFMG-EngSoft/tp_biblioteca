@@ -1,6 +1,7 @@
 package testes;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Date;
 
@@ -19,15 +20,30 @@ public class EmprestimoTeste {
         Date dataDevolucao = new Date(28, 10, 2020); 
         Date dataPrevistaDevolucao = new Date(01, 11, 2020); 
         float valorMulta = 10.00f;
-        Emprestimo assinatura = new Emprestimo(idExemplar, idUsuario, ativo, dataEmprestimo, dataDevolucao, 
+        Emprestimo emprestimo = new Emprestimo(idExemplar, idUsuario, ativo, dataEmprestimo, dataDevolucao, 
                                 dataPrevistaDevolucao, valorMulta);
         
-        assertEquals(idExemplar, assinatura.getIdExemplar());
-        assertEquals(idUsuario, assinatura.getIdUsuario());
-        assertEquals(ativo, assinatura.isAtivo());
-        assertEquals(dataEmprestimo, assinatura.getDataEmprestimo());
-        assertEquals(dataDevolucao, assinatura.getDataDevolucao());
-        assertEquals(dataPrevistaDevolucao, assinatura.getDataPrevistaDevolucao());
-        assertEquals(valorMulta, assinatura.getValorMulta());
+        assertEquals(idExemplar, emprestimo.getIdExemplar());
+        assertEquals(idUsuario, emprestimo.getIdUsuario());
+        assertEquals(ativo, emprestimo.isAtivo());
+        assertEquals(dataEmprestimo, emprestimo.getDataEmprestimo());
+        assertEquals(dataDevolucao, emprestimo.getDataDevolucao());
+        assertEquals(dataPrevistaDevolucao, emprestimo.getDataPrevistaDevolucao());
+        assertEquals(valorMulta, emprestimo.getValorMulta());
+    }
+
+    @Test
+    public void testeCalcularMulta() {
+        int qtdDiasAtraso = 5;
+        Emprestimo emprestimo = new Emprestimo();
+        emprestimo.setValorMulta(10.00f);
+
+        assertEquals(15.00f, emprestimo.calcularMulta(qtdDiasAtraso));
+    }
+
+    @Test
+    public void testeValidarEmprestimo() {
+        Emprestimo emprestimo = new Emprestimo();
+        assertTrue(emprestimo.validarEmprestimo());
     }
 }

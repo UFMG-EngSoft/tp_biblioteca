@@ -1,6 +1,7 @@
 package testes;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Date;
 
@@ -26,5 +27,11 @@ public class ProfessorTeste {
         assertEquals(dataNascimento, professor.getDataNascimento());
         assertEquals(login, professor.getLogin());
         assertEquals(senha, professor.getSenha());
+    }
+
+    @Test
+    public void testeConfigurarDisponibilidadeTitulo() {
+        Professor professor = new Professor();
+        assertTrue(professor.configurarDisponibilidadeTitulo());
     }
 }

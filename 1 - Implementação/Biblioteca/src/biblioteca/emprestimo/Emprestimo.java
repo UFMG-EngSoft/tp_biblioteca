@@ -26,8 +26,8 @@ public class Emprestimo {
     this.valorMulta = valorMulta;
   }
 
-  private void calcularMulta() {
-
+  public float calcularMulta(int qtdDiasAtraso) {
+    return valorMulta+qtdDiasAtraso;
   }
 
   public boolean validarEmprestimo() {
