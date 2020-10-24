@@ -115,7 +115,7 @@ public class Sistema {
     System.out.println("\nSISTEMA PARA GESTÃO DE BIBLIOTECA");
     carregarTitulos();
     while (executando) {
-      if (!usuario.estaLogado) {
+      if (!usuario.getEstaLogado()) {
         mostrarTelaLogin();
       } else {
         mostrarTelaPrincipal();

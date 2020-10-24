@@ -18,14 +18,13 @@ public class Aluno extends Usuario {
    * @return String return the matricula
    */
   public String getMatricula() {
-      return matricula;
+    return matricula;
   }
 
   /**
    * @param matricula the matricula to set
    */
   public void setMatricula(String matricula) {
-      this.matricula = matricula;
+    this.matricula = matricula;
   }
-
 }

@@ -17,14 +17,13 @@ public class Jornal extends Titulo {
    * @return String return the editorChefe
    */
   public String getEditorChefe() {
-      return editorChefe;
+    return editorChefe;
   }
 
   /**
    * @param editorChefe the editorChefe to set
    */
   public void setEditorChefe(String editorChefe) {
-      this.editorChefe = editorChefe;
+    this.editorChefe = editorChefe;
   }
-
 }

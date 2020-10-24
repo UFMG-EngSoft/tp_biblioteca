@@ -13,7 +13,7 @@ public class Usuario {
   protected Date dataNascimento;
   protected String login;
   protected String senha;
-  public boolean estaLogado;
+  protected boolean estaLogado;
 
   List<Emprestimo> emprestimos;
 
@@ -77,89 +77,103 @@ public class Usuario {
     this.estaLogado = estaLogado;
     this.carregarEmprestimos();
   }
-  
+
   /**
    * @return int return the id
    */
   public int getId() {
-      return id;
+    return id;
   }
 
   /**
    * @param id the id to set
    */
   public void setId(int id) {
-      this.id = id;
+    this.id = id;
   }
 
   /**
    * @return String return the nome
    */
   public String getNome() {
-      return nome;
+    return nome;
   }
 
   /**
    * @param nome the nome to set
    */
   public void setNome(String nome) {
-      this.nome = nome;
+    this.nome = nome;
   }
 
   /**
    * @return String return the sexo
    */
   public String getSexo() {
-      return sexo;
+    return sexo;
   }
 
   /**
    * @param sexo the sexo to set
    */
   public void setSexo(String sexo) {
-      this.sexo = sexo;
+    this.sexo = sexo;
   }
 
   /**
    * @return Date return the dataNascimento
    */
   public Date getDataNascimento() {
-      return dataNascimento;
+    return dataNascimento;
   }
 
   /**
    * @param dataNascimento the dataNascimento to set
    */
   public void setDataNascimento(Date dataNascimento) {
-      this.dataNascimento = dataNascimento;
+    this.dataNascimento = dataNascimento;
   }
 
   /**
    * @return String return the login
    */
   public String getLogin() {
-      return login;
+    return login;
   }
 
   /**
    * @param login the login to set
    */
   public void setLogin(String login) {
-      this.login = login;
+    this.login = login;
   }
 
   /**
    * @return String return the senha
    */
   public String getSenha() {
-      return senha;
+    return senha;
   }
 
   /**
    * @param senha the senha to set
    */
   public void setSenha(String senha) {
-      this.senha = senha;
+    this.senha = senha;
+  }
+
+  /**
+   * @return String return the estaLogado
+   */
+  public boolean getEstaLogado() {
+    return estaLogado;
+  }
+
+  /**
+   * @param estaLogado the estaLogado to set
+   */
+  public void setEstaLogado(boolean estaLogado) {
+    this.estaLogado = estaLogado;
   }
 
 }

@@ -17,28 +17,27 @@ public class Exemplar {
    * @return int return the id
    */
   public int getId() {
-      return id;
+    return id;
   }
 
   /**
    * @param id the id to set
    */
   public void setId(int id) {
-      this.id = id;
+    this.id = id;
   }
 
   /**
    * @return int return the edicao
    */
   public int getEdicao() {
-      return edicao;
+    return edicao;
   }
 
   /**
    * @param edicao the edicao to set
    */
   public void setEdicao(int edicao) {
-      this.edicao = edicao;
+    this.edicao = edicao;
   }
-
 }

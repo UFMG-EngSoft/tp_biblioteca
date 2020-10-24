@@ -40,5 +40,4 @@ public class Assinatura {
   public void setIdUsuario(int idUsuario) {
     this.idUsuario = idUsuario;
   }
-
 }
